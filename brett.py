@@ -1,1 +1,1 @@
-print("Green")
+print("Green/Blue")

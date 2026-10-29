@@ -1,1 +1,4 @@
-print("This is the part where we make the player class")
+class Player:
+
+    def __init__ (self, name):
+        self.name = name

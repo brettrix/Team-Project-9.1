@@ -15,3 +15,16 @@
         #put next three cards in deckarray2 into loot array
 
 #congrats {winner} with not 0 cards
+
+from Player import Player
+
+Player1 = Player("Player1")
+Player2 = Player("Player2")
+
+loot = ["3 of spades", "8 of diamonds", "Queen of hearts"]
+
+print(Player1.deck_count())
+Player1.draw_top_card()
+print(Player1.deck_count())
+Player1.append_deck(loot)
+print(Player1.deck_count())

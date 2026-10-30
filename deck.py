@@ -12,7 +12,8 @@ class Deck:
             for rank in self.ranks: 
                 card = f"{rank} of {suit}"
                 self.cards.append(card)
-
+                
+#Shuffles deck
     def shuffle(self):
         random.shuffle(self.cards)
 

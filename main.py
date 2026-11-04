@@ -17,12 +17,9 @@ while player1.deck_count() > 0 and player2.deck_count() > 0:
     print(f"\n{player1.name} drew the {card1}.")
     print(f"{player2.name} drew the {card2}.")
 
-    # Extract the rank from strings such as "King of Hearts".
-    rank1 = card1.split(" of ")[0]
-    rank2 = card2.split(" of ")[0]
-
-    value1 = rank_values[rank1]
-    value2 = rank_values[rank2]
+    # Find the value of the cards
+    value1 = card1.value()
+    value2 = card2.value()
 
     # Preserve all cards played until there is a winner.
     loot.extend([card1, card2])

@@ -1,4 +1,5 @@
 import random 
+from cards import Card
 # Deck class
 class Deck: 
     suits = ["Hearts", "Diamonds", "Clubs", "Spades"]
@@ -10,7 +11,7 @@ class Deck:
 
         for suit in self.suits:
             for rank in self.ranks: 
-                card = f"{rank} of {suit}"
+                card = Card(rank, suit)
                 self.cards.append(card)
                 
 #Shuffles deck

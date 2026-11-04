@@ -6,15 +6,6 @@ print("Welcome to Two-Deck War! Lets fight!")
 player1 = Player(input("Player 1, what is your name? "))
 player2 = Player(input("Player 2, what is your name? "))
 
-# Your Player class creates and shuffles each player's deck.
-# Your current Deck stores cards as strings.
-rank_values = {
-    "2": 2, "3": 3, "4": 4, "5": 5,
-    "6": 6, "7": 7, "8": 8, "9": 9,
-    "10": 10, "Jack": 11, "Queen": 12,
-    "King": 13, "Ace": 14
-}
-
 loot = []
 war = False
 
